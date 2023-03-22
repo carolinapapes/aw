@@ -19,28 +19,26 @@ header {
   margin-bottom: 3rem;
   justify-content: space-between;
   width: 100%;
-  .logo {
-    width: calc((100% - 6rem - 3rem * 11) / 12 * 3 + 3rem * 2);
-  }
 }
 .logo {
   font-weight: 800;
   font-size: 1.5rem;
   text-align: center;
-  width: 100%;
+  // width: 100%;
   // text-transform: uppercase;
 }
 
 main {
-  display: grid;
+  padding-left: 30%;
+  display: block;
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: 3rem;
+  grid-gap: 2rem;
   width: 100%;
   min-height: 100%;
 
   .text-box {
     grid-column: 5/-1;
-    display: grid;
+    display: block;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 3rem;
     .section {
@@ -49,7 +47,7 @@ main {
         grid-column: 1/-1;
       }
       &__title {
-        font-size: 3rem;
+        font-size: clamp(2rem, 3rem, 4rem);
         letter-spacing: -0.25px;
         font-weight: 500;
         line-height: 2.5rem;
@@ -165,19 +163,88 @@ body {
     max-width: 1.25rem;
   }
 }
+@media (min-width: 1200px) {
+  main {
+    display: grid;
+    grid-gap: 3rem;
+    padding-left: 0;
+    .text-box {
+      display: grid;
+    }
+  }
+}
+@media (max-width: 992px) {
+  main {
+    grid-gap: 1rem;
+
+    .text-box {
+      grid-column: 1/-1;
+
+      // display: block;
+      .experience {
+        display: flex;
+        flex-direction: column;
+        &:last-child {
+          border-bottom: 1px solid rgb(239, 239, 239);
+        }
+        .date p {
+          font-size: 0.75rem;
+          // text-transform: uppercase;
+          line-height: 2;
+          font-weight: 500;
+        }
+        .title {
+          display: flex;
+          align-items: baseline;
+          gap: 1rem;
+          margin-bottom: 1rem;
+        }
+        .description p {
+          font-size: 1rem;
+          font-weight: 500;
+          line-height: 2;
+        }
+      }
+    }
+  }
+}
 
 @media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: start;
+    // justify-content: center;
+  }
+  .img-box {
+    width: auto;
+  }
+
+  .linkedin {
+    white-space: normal;
+  }
+  main {
+    grid-gap: 1rem;
+    padding-left: 0;
+    .text-box {
+      grid-column: 1/-1;
+
+      h1 {
+        font-size: 4rem;
+        letter-spacing: -1.25px;
+        font-weight: 600;
+        line-height: 4rem;
+        margin-bottom: 3rem;
+      }
+    }
+  }
   .app {
     grid-template-rows: 50px 1fr;
     padding: 1rem 1rem;
     padding-bottom: 3rem;
   }
-  main {
-    display: flex;
-    flex-direction: column;
-  }
+
   .img-box {
     width: 30%;
-    margin-left: 1rem;
+    margin-left: 0;
   }
 }
