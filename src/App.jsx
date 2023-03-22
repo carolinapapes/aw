@@ -27,11 +27,11 @@ function App() {
       <main className="">
         <div className="text-box">
           <section className="hero section section__wide">
-            <h1>
+            <h1 className="col-2">
               Hi! I&apos;m Andres,
               <br /> a product manager
             </h1>
-            <p className="sub">
+            <p className="sub col-2">
               I am passionate about building products that solve real-world
               problems. I thrive on the challenge of identifying market
               opportunities, gathering insights, and collaborating with
