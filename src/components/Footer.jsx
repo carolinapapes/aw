@@ -21,7 +21,7 @@ function footer() {
 
         <div className="info footer__grid--contact">
           <h4 className="info__title">Contact us</h4>
-          <a href="+5493416740084" target="_blank" rel="noreferrer">
+          <a href="tel:+5493416740084" target="_blank" rel="noreferrer">
             <p>Tel: +54 9 341 674 0084</p>
           </a>
           <a href="mailto:shajarllc@gmail.com" target="_blank" rel="noreferrer">

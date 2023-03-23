@@ -7,6 +7,7 @@ a {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
     text-decoration: underline;
   }
   &.no_hover {
@@ -16,6 +17,7 @@ a {
       background-clip: none;
       -webkit-text-fill-color: white;
       -webkit-box-decoration-break: none;
+      box-decoration-break: clone;
       //   text-decoration: none;
     }
   }

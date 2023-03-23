@@ -26,7 +26,7 @@ function Contact() {
           {' '}
           <h3>Contact us</h3>
           <SectionSubTitle>
-            <a href="+5493416740084" target="_blank" rel="noreferrer">
+            <a href="tel:+5493416740084" target="_blank" rel="noreferrer">
               <p className="section__sub">Tel: +54 9 341 674 0084</p>
             </a>
             <a

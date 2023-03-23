@@ -19,7 +19,7 @@ function AboutUs() {
   return (
     <>
       <section className="hero section section__wide">
-        <PageTitle>We have a proven track record.</PageTitle>
+        <PageTitle>We have a proven track&nbsp;record.</PageTitle>
         <PageSubtitle>
           Whether it&apos;s optimizing project management processes or
           developing a new product strategy, our team is committed to helping
